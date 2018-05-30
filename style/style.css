@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    height: 300px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 10px 0px 10px #000000;    
+}
+
+.menu li{
+    display: inline;
+    float: left;    
+}
+
+.menu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    background-color: #111;
+}
+
+#cadastrar{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+#home {
+    padding-top: 10px;
+}
