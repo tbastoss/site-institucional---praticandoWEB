@@ -16,12 +16,12 @@ div{
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 10px 0px 10px #000000;    
+    box-shadow: 10px 0px 10px #000000;
 }
 
 .menu li{
     display: inline;
-    float: left;    
+    float: left;
 }
 
 .menu li a{
@@ -43,8 +43,4 @@ div{
     padding: 14px 16px;
     text-decoration: none;
     float: right;
-}
-
-#home {
-    padding-top: 10px;
 }
