@@ -1,6 +1,7 @@
 * {box-sizing: border-box}
 /* Full-width input fields */
-  input[type=text]{
+
+#emailID, #telefoneID{
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -10,14 +11,13 @@
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus{
+#emailID:focus, #telefoneID:focus{
   background-color: #ddd;
   outline: none;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.signupbtn {
-  float: left;
+.signup {
   width: 100%;
 }
 
@@ -30,22 +30,29 @@ input[type=text]:focus{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
   padding-top: 50px;
+  background: rgba(71, 78, 93, 0.9);
+  /* background: transparent; */
+  /* position: absolute; */
+  z-index: 9; /* .modal[zIndex] - 1 */
+  bottom: 0;
+  right: 0;
 }
 
 /* Modal Content/Box */
 .modal-content {
+  position: center;
+  scroll-behavior: smooth;
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: fit-content;  
+  height: 430px;
 }
 
 /* Style the horizontal ruler */
@@ -57,17 +64,18 @@ hr {
 /* The Close Button (x) */
 .close {
   position: absolute;
-  right: 35px;
+  right: 15px;
   top: 15px;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: #111;
 }
 
 .close:hover,
 .close:focus {
   color: #f44336;
   cursor: pointer;
+  text-shadow: 0 0 10px #000;
 }
 
 /* Clear floats */

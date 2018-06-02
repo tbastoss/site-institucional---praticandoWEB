@@ -1,0 +1,34 @@
+section{
+    height: 100%;
+}
+
+#homeID {
+    background-image: url(../img/capa.jpg);
+    background-size: cover;
+}
+
+#containerHome {
+    top: 40%;
+    padding: 0 25% 0 25%;
+    position: relative; 
+}
+
+#containerHome p{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+}
+
+.cadastrarBtn {
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+
+.chamaSobre {
+    position: relative;
+    font-size: 50px;
+    color: #FFFFFF;
+} 
+
